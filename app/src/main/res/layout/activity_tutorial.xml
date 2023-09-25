@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TutorialActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_btn"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="12dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card3"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_margin="4dp"
+                android:elevation="0dp"
+                app:cardBackgroundColor="@color/black"
+                app:cardCornerRadius="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/nextBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                app:cardBackgroundColor="@color/dot_sel"
+                app:cardCornerRadius="10dp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/nextBtntxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mainimg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

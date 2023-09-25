@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_110sdp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/app_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/color_picker"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/loadingtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laoding Ads  "
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:indeterminateTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/loadingtxt"
+        app:layout_constraintStart_toEndOf="@+id/loadingtxt"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+   <!-- <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStart"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:backgroundTint="@color/yellow"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="invisible"
+        app:cornerRadius="@dimen/_50sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adLayout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/greyColor"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@color/blue"
+            android:padding="2dp"
+            android:text="Ads"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintTop_toTopOf="@+id/adLayout"
+            tools:ignore="MissingConstraints">
+
+        </TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+       <LinearLayout
+           android:id="@+id/linearLayout7"
+           android:layout_width="match_parent"
+           android:layout_height="?attr/actionBarSize"
+           android:orientation="horizontal"
+           tools:ignore="MissingConstraints">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:text="Exit App"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+              android:textStyle="bold"
+
+              />
+       </LinearLayout>
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Are you really want to exit?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/adlayoutNative"
+        android:layout_width="match_parent"
+        android:layout_height="255dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@color/gray_lite"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:background="@color/blue"
+            android:text="AD"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="75dp"
+        android:layout_marginBottom="20dp"
+
+        android:paddingEnd="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/yesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FF6B00"
+                app:cardCornerRadius="10dp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/yesBTntxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="Yes"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Nobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="#FF6B00"
+                app:cardCornerRadius="10dp"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/nextBtntxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="No"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/app_icon"
+        app:layout_constraintBottom_toTopOf="@+id/txtLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+    <LinearLayout
+        android:id="@+id/txtLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/adlayoutNative"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="4dp"
+            android:layout_marginStart="40dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/round_img" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                android:textSize="14sp"
+                android:text="  Pick Colour From Your Saved Picture"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="4dp"
+
+            android:layout_marginStart="40dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_img"
+                android:layout_gravity="center"
+                android:tint="#ED383A"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+
+                android:textSize="14sp"
+                android:text="  Choose Your Desired Colour Palates"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="4dp"
+            android:layout_marginStart="40dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/round_img"
+                android:layout_gravity="center"
+
+                android:tint="#37B349"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:text="  Pick Colour Live From Camera"
+
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- <TextView
+         android:id="@+id/exit_dialog_sponTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="sponsored"
+         android:textColor="@android:color/black"
+         android:layout_gravity="right"
+         android:padding="2dp"
+         android:visibility="gone"
+         android:textSize="8sp"/>
+ -->
+
+
+    <!-- <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+         android:id="@+id/exit_dialog_adView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_gravity="center"
+         ads:adSize="MEDIUM_RECTANGLE"
+         ads:adUnitId="@string/admob_banner"
+         ads:layout_constraintBottom_toBottomOf="parent"
+         ads:layout_constraintEnd_toEndOf="parent"
+         ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+
+     <TextView
+         android:layout_width="300dp"
+         android:layout_height="wrap_content"
+         android:textSize="20sp"
+         android:textColor="@android:color/white"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:gravity="center"
+         android:padding="10dp"
+         android:text="Do you want to exit?"/>
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp">
+
+         <TextView
+             android:id="@+id/exit_dialog_exitTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Exit"
+             android:textColor="@android:color/white"
+             android:textSize="18sp" />
+
+         <TextView
+             android:id="@+id/exit_dialog_rateTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Rate Us"
+             android:textColor="@android:color/white"
+             android:textSize="18sp" />
+
+
+         <TextView
+             android:id="@+id/exit_dialog_noTextView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="No"
+             android:textColor="@android:color/white"
+             android:textSize="18sp" />
+
+     </LinearLayout>
+ -->
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF003D</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF003D</color>
+    <color name="yellow">#FFE500</color>
+    <color name="golden">#FFC700</color>
+    <color name="pink">#FFC6E5</color>
+    <color name="blue">#0085FF</color>
+    <color name="ad_attribution_background_color">#FFA500</color>
+    <color name="greyColor">#787878</color>
+    <color name="gray_lite">#B8B8B8</color>
+    <color name="lite">#FFE6DE</color>
+    <color name="green">#38FFB0</color>
+    <color name="dot_unsel">#787878</color>
+    <color name="dot_sel">#FFA601</color>
+
+</resources>

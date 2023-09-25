@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Color Picker</string>
+    <string name="color_picker">Color Picker</string>
+    <string name="get_started">Get Started</string>
+    <string name="todo">TODO</string>
+    <string name="color">color</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    &lt;!&ndash;    &lt;!&ndash;      APP open &ndash;&gt;&ndash;&gt;
+    <string name="open_app_highId">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="open_app_mediumid">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="open_app_lowId">ca-app-pub-3940256099942544/3419835294</string>
+    &lt;!&ndash;    &lt;!&ndash;    Banner&ndash;&gt;&ndash;&gt;
+    <string name="banner_highId">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_mediumid">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_lowId">ca-app-pub-3940256099942544/6300978111</string>
+    &lt;!&ndash;    &lt;!&ndash;    interstial&ndash;&gt;&ndash;&gt;
+    <string name="interstial_highId">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstial_mediumid">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="interstial_lowId">ca-app-pub-3940256099942544/1033173712</string>
+    &lt;!&ndash;    &lt;!&ndash;    Native &ndash;&gt;&ndash;&gt;
+    <string name="native_highId">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_mediumid">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="native_lowId">ca-app-pub-3940256099942544/2247696110</string>
+
+    <string name="collapsable_test_banner">ca-app-pub-3940256099942544/2014213617</string>-->
+    <string name="in_app_purchase">remove_ads_color_picker</string>
+
+
+</resources>

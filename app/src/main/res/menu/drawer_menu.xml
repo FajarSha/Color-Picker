@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/share_app" />
+    <item
+        android:id="@+id/rate_us"
+        android:icon="@drawable/ic_rate_us"
+        android:title="@string/rate_us" />
+    <item
+        android:id="@+id/privacy_policy"
+        android:icon="@drawable/ic_privacy_policy"
+        android:title="@string/privacy_policy" />
+    <item
+        android:id="@+id/terms_conditions"
+        android:icon="@drawable/ic_term_condition"
+        android:title="Terms and Conditions" />
+    <item
+        android:id="@+id/manage_subscription"
+        android:icon="@drawable/ic_manage_subscriptions"
+        android:title="@string/manage_subscription" />
+</menu>

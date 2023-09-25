@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.colorpicker.colorpalette.colorstock.rbg.color.eyedropper'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.colorpicker.colorpalette.colorstock.rbg.color.eyedropper"
+        minSdk 26
+        targetSdk 33
+        versionCode 9
+        versionName "1.0.9"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            resValue("string", "app_ads_id", "ca-app-pub-3940256099942544~3347511713")
+            resValue("string", "app_open_high", "ca-app-pub-3940256099942544/3419835294")
+            resValue("string", "app_open_medium", "ca-app-pub-3940256099942544/3419835294")
+            resValue("string", "app_open_low", "ca-app-pub-3940256099942544/3419835294")
+
+            resValue("string", "interstitial_high_id", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "interstitial_medium_id", "ca-app-pub-3940256099942544/1033173712")
+            resValue("string", "interstitial_low_id", "ca-app-pub-3940256099942544/1033173712")
+
+            resValue("string", "banner_high_id", "ca-app-pub-3940256099942544/6300978111")
+            resValue("string", "banner_medium_id", "ca-app-pub-3940256099942544/6300978111")
+            resValue("string", "banner_low_id", "ca-app-pub-3940256099942544/6300978111")
+
+            resValue("string", "native_high_id", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "native_medium_id", "ca-app-pub-3940256099942544/2247696110")
+            resValue("string", "native_low_id", "ca-app-pub-3940256099942544/2247696110")
+
+            resValue("string", "splash_id", "ca-app-pub-3940256099942544/2014213617")
+
+
+
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+            resValue("string", "app_ads_id", "ca-app-pub-8021747795126780~3458934095")
+            resValue("string", "app_open_high", "ca-app-pub-8021747795126780/3274907397")
+            resValue("string", "app_open_medium", "ca-app-pub-8021747795126780/3199681933")
+            resValue("string", "app_open_low", "ca-app-pub-8021747795126780/6092642423")
+
+            resValue("string", "interstitial_high_id", "ca-app-pub-8021747795126780/4512763602")
+            resValue("string", "interstitial_medium_id", "ca-app-pub-8021747795126780/6475785806")
+            resValue("string", "interstitial_low_id", "ca-app-pub-8021747795126780/6723197810")
+
+            resValue("string", "banner_high_id", "ca-app-pub-8021747795126780/2975524493")
+            resValue("string", "banner_medium_id", "ca-app-pub-8021747795126780/7495269725")
+            resValue("string", "banner_low_id", "ca-app-pub-8021747795126780/9540932849")
+
+            resValue("string", "native_high_id", "ca-app-pub-8021747795126780/8718805767")
+            resValue("string", "native_medium_id", "ca-app-pub-8021747795126780/4971132444")
+            resValue("string", "native_low_id", "ca-app-pub-8021747795126780/6284214110")
+
+            resValue("string", "splash_id", "ca-app-pub-8021747795126780/7106341195")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.google.android.gms:play-services-ads:22.3.0'
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    implementation "androidx.camera:camera-camera2:1.2.1"
+    implementation "androidx.camera:camera-lifecycle:1.2.1"
+    implementation "androidx.camera:camera-view:1.2.1"
+
+    def lifecycle_version = "2.3.1"
+    implementation "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation 'androidx.lifecycle:lifecycle-process:2.3.1'
+
+    implementation 'com.android.billingclient:billing:6.0.1'
+
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    //For crash analytics
+    implementation("com.google.firebase:firebase-crashlytics")
+}
